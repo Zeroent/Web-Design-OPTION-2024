@@ -1,0 +1,140 @@
+:root {
+  --primary: rgb(0, 255, 55);
+  --bg: rgb(56, 56, 56);
+  --lo: rgb(0, 81, 255);
+}
+
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background: linear-gradient(to right, #3498db, #bdc3c7);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(8, 8, 8, 0.8);
+  border-bottom: 2px solid rgb(23, 41, 234);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: azure;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  background: linear-gradient(to bottom, rgb(85, 105, 233), rgb(33, 255, 81));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-position 0.5s;
+}
+
+.navbar .navbar-logo span:hover {
+  background-position: 0 100%;
+}
+
+.navbar .navbar-nav a {
+  background: linear-gradient(to bottom, rgb(95, 255, 140), rgb(29, 56, 232));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-position 0.5s;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  background-position: 0 100%;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.2rem solid rgb(37, 199, 214);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+.card {
+  top: 125px;
+  position: relative;
+  max-width: 700px;
+  margin: 30px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.laptop-specs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.laptop-image img {
+  max-width: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.specs-details {
+  padding: 20px;
+  color: #333;
+}
+
+.specs-details h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.specs-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.specs-details li {
+  margin-bottom: 8px;
+}
+
+.specs-details p {
+  color: #555;
+}
